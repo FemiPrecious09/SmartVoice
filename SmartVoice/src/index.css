@@ -1,0 +1,39 @@
+@import "tailwindcss";
+.scene {
+  perspective: 1000px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 10s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(29, 203, 209, 0.1);
+  border: 2px solid rgba(20, 131, 235, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.front  { transform: rotateY(  0deg) translateZ(128px); }
+.back   { transform: rotateY(180deg) translateZ(128px); }
+.right  { transform: rotateY( 90deg) translateZ(128px); }
+.left   { transform: rotateY(-90deg) translateZ(128px); }
+.top    { transform: rotateX( 90deg) translateZ(128px); }
+.bottom { transform: rotateX(-90deg) translateZ(128px); }
+
+@keyframes rotateCube {
+  0%   { transform: rotateX(0deg) rotateY(0deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}

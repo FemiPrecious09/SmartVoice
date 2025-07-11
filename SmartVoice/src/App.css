@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.i{
+  font-size: 25px;
+}
+.btn{
+  margin-left: -35px;
+}
