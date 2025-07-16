@@ -1,5 +1,6 @@
 {
   "name": "smart-voice",
+  "homepage": "https://femiprecious46.github.io/SmartVOIZE",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",

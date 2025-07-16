@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/Voice2/"
+  base: "/SmartVOIZE"
 })
